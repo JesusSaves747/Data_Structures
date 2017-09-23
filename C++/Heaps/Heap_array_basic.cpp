@@ -10,6 +10,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <string>
+#include <ctime>
 
 using namespace std;
 
@@ -181,7 +182,7 @@ int main(int argc, char **argv) {
 	// Test out the add entry function:
 
 	// Ask the user for values to enter:
-
+	cout<<" Testing the insert method of the Heap Class ..."<<endl<<endl;
 	cout<<" Please input the entries of the Heap . Press 'q' to quit"<<endl;
 
 	string userInput;
@@ -213,32 +214,32 @@ int main(int argc, char **argv) {
 	}
 
 
-
-		// firstHeap->add_entry(5);
-		// firstHeap->add_entry(8);
-		// firstHeap->add_entry(15);
-		// firstHeap->add_entry(32);
-		// firstHeap->add_entry(6);
-		// firstHeap->add_entry(656);
-		// firstHeap->add_entry(22);
-		// firstHeap->add_entry(35);
-
-
-		cout<<" The entries of the heap are: "<<endl;
+		cout<<" The entries of the heap after insertion are: "<<endl;
 		firstHeap->print();
 
 		// Test out the remove entry function:
 		int first = firstHeap->remove_entry();
 
-		cout<<" The First entry removed is: "<< first<<endl;
+		cout<<" Testing out the Remove method of the Heap Class  for a Priority Queue:"<<endl<<endl;
 
-		cout<<" The entries in the heap are"<<endl;
+		cout<<" The First entry removed from the heap is: "<< first<<endl;
+
+		cout<<" The entries in the heap after removing the first entry are"<<endl;
 		firstHeap->print();
 
 
 
 	// Create a random int array:
-	int inputArray[8] = {3,1,4,5,9,2,7,8};
+
+	cout<<" Testing out the Heapify method of the Heap class ..."<<endl<<endl;
+
+	int inputArray[11];
+
+	for (int i=0;i<10;i++){
+		inputArray[i] = rand() %100 +1;
+	}
+
+	//int inputArray[8] = {3,1,4,5,9,2,7,8};
 
 	int length = sizeof(inputArray)/sizeof(inputArray[0]);
 
@@ -246,10 +247,13 @@ int main(int argc, char **argv) {
 	// Second heap: To test the heapify function:
 	Heap* secondHeap = new Heap(inputArray, length);
 
+
+	cout<<" These are elements of a random array of 10 integers between 1 and 100"<<endl;
 	secondHeap->print();
 
 	secondHeap->Heapify();
 
+	cout<<" These are the elements of the array after the Heapify operation:"<<endl;
 	secondHeap->print();
 
 
