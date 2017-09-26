@@ -1,0 +1,37 @@
+/*
+ * Node.cpp
+ *
+ *  Created on: Sep 12, 2017
+ *      Author: savio
+ */
+
+#include "Node.h"
+
+namespace sav_sep {
+
+
+// The template has to be placed before every function definition:
+template <class Item>
+Node<Item>::~Node() {
+	// TODO Auto-generated destructor stub
+}
+
+template <class Item>
+// Function to get data value:
+Item Node<Item>::getData(){
+
+	return data;
+}
+
+// Function to get link of the node:
+template <class Item>
+Node<Item>* Node<Item>::getLink(){
+
+	return link;
+}
+
+
+
+
+
+} /* namespace sav_sep */

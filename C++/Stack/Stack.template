@@ -1,0 +1,74 @@
+/*
+ * Stack.cpp
+ *
+ *  Created on: Sep 12, 2017
+ *      Author: savio
+ */
+
+#include "Stack.h"
+
+namespace sav_sep {
+
+//Stack::Stack() {
+//	// TODO Auto-generated constructor stub
+//
+//}
+
+template <class Item>
+Stack<Item>::~Stack() {
+	// TODO Auto-generated destructor stub
+}
+
+
+template <class Item>
+// Push function: Allow the user to specify only the data value not the entire node:
+bool Stack<Item>::push(const Item& entry)  {
+
+	// TO DO: Implement this in a try-catch block:
+
+	// Create a new node with entry as the data value:
+	headPtr = new Node<Item>(entry, headPtr);
+
+//	// Make link of newNode point to Head Node of stack:
+//	newNode.setLink(headPtr);
+//
+//	// Make the headPtr as a pointer to the newNode:
+//	headPtr = &newNode;
+
+	numNodes++;
+
+	//If successful:
+	return true;
+
+}
+
+
+template <class Item>
+// Pop function:
+Item Stack<Item>::pop(){
+
+	Item poppedValue = headPtr->getData();
+
+	// Set the headPtr to the pointer to the second node:
+	headPtr = headPtr->getLink();
+	
+	numNodes--;
+
+	//If successful:
+	return poppedValue;
+}
+
+// Print function:
+template <class Item>
+void Stack<Item>::print(){
+
+	for (Node<Item>* cursor = headPtr; cursor!=NULL; cursor = cursor->getLink()){
+
+		cout<<" Node value: "<<cursor->getData()<<endl;
+	}
+}
+
+
+
+
+} /* namespace sav_sep */
