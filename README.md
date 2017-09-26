@@ -14,4 +14,10 @@ g++ -Wall -std=c++11 Heap_array_basic.cpp -o test_heap_array
 
 ./test_heap_array
 
-## Stack: TO DO:
+## Stack:
+
+cd C++/Stack
+
+g++ -Wall -std=c++11 Stack_test_main.cpp -o Test_Stack_Apps
+
+./Test_Stack_Apps
