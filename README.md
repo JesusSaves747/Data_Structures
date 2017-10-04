@@ -21,3 +21,24 @@ cd C++/Stack
 g++ -Wall -std=c++11 Stack_test_main.cpp -o Test_Stack_Apps
 
 ./Test_Stack_Apps
+
+# AVL_Tree:
+
+cd C++/AVL_Tree
+
+g++ -Wall -std=c++11 AVL_Tree_basic_node.cpp -o test_AVL_tree
+
+./test_AVL_tree
+
+
+# Java:
+
+## Heaps:
+
+cd Java/Heaps
+
+javac Heap_array_basic.java      // For Static array implementation: MAX_SIZE = 20
+
+javac Heap_array_dynamic.java    // For dynamic array implementation using ArrayList
+
+java Heap.class                  // To run the program
