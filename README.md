@@ -37,8 +37,12 @@ g++ -Wall -std=c++11 AVL_Tree_basic_node.cpp -o test_AVL_tree
 
 cd Java/Heaps
 
-javac Heap_array_basic.java      // For Static array implementation: MAX_SIZE = 20
+// For Static array implementation: MAX_SIZE = 20
+javac Heap_array_basic.java      
 
-javac Heap_array_dynamic.java    // For dynamic array implementation using ArrayList
+// For dynamic array implementation using ArrayList
+javac Heap_array_dynamic.java    
 
-java Heap.class                  // To run the program
+
+// To run the program
+java Heap.class                  
