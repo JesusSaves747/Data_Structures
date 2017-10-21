@@ -30,6 +30,29 @@ g++ -Wall -std=c++11 AVL_Tree_basic_node.cpp -o test_AVL_tree
 
 ./test_AVL_tree
 
+# Binary Search Tree (BST):
+cd C++/BST
+
+g++ -Wall -std=c++11 BST.cpp -o test_bst
+
+./test_bst
+
+# HashMap:
+
+cd C++/HashMaps
+
+g++ -Wall -std=c++11 HashMap.cpp -o test_hashmap
+
+./test_hashmap
+
+# Graph:
+
+cd C++/Graphs
+
+g++ -Wall -std=c++11 Graph.cpp -o test_graph
+
+./test_graph
+
 
 # Java:
 
