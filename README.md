@@ -45,6 +45,12 @@ g++ -Wall -std=c++11 HashMap.cpp -o test_hashmap
 
 ./test_hashmap
 
+// For the templated version of HashMap:
+
+g++ -Wall -std=c++11 -o test_t_hmap T_Hmap_driver.cpp Templated_Hashmap.h
+
+./test_t_hmap
+
 # Graph:
 
 cd C++/Graphs
